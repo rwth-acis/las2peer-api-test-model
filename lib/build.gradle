@@ -22,7 +22,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'i5'
             artifactId = 'las2peer-api-test-model'
-            version = '0.1.2'
+            version = '0.1.3'
 
             from components.java
         }
@@ -35,6 +35,15 @@ publishing {
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+
+        maven {
+            url = "https://archiva.dbis.rwth-aachen.de:9911/repository/internal"
+
+            credentials {
+                username = System.env.ARCHIVA_USERNAME
+                password = System.env.ARCHIVA_PASSWORD
             }
         }
     }
