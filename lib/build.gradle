@@ -18,6 +18,16 @@ dependencies {
 }
 
 publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'i5.las2peer.apiTestModel'
+            artifactId = 'apiTestModel'
+            version = '0.1.1'
+
+            from components.java
+        }
+    }
+
     repositories {
         maven {
             name = "GitHubPackages"
