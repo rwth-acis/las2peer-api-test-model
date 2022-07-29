@@ -229,4 +229,8 @@ public class BodyAssertionOperator implements Serializable {
     public String getInputValue() {
         return this.inputValue;
     }
+
+    public void setFollowedByOperator(BodyAssertionOperator followedByOperator) {
+        this.followedByOperator = followedByOperator;
+    }
 }
