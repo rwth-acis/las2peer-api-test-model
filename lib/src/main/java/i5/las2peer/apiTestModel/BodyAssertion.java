@@ -33,6 +33,11 @@ public class BodyAssertion extends RequestAssertion implements Serializable {
         this.operator = operator;
     }
 
+    public BodyAssertion(BodyAssertionOperator operator) {
+        super(-1, -1, ASSERTION_TYPE_ID);
+        this.operator = operator;
+    }
+
     /**
      * Loads the body assertion with the given id from the database.
      *
