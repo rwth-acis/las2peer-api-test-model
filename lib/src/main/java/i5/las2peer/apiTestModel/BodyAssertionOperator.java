@@ -76,6 +76,18 @@ public class BodyAssertionOperator implements Serializable {
         this.followedByOperator = followedByOperator;
     }
 
+    public BodyAssertionOperator(int operatorId, int inputType, String inputValue, BodyAssertionOperator followedByOperator) {
+        this(-1, operatorId, -1, inputType, inputValue, followedByOperator);
+    }
+
+    public BodyAssertionOperator(int operatorId, int inputType, BodyAssertionOperator followedByOperator) {
+        this(-1, operatorId, -1, inputType, "", followedByOperator);
+    }
+
+    public BodyAssertionOperator(int operatorId, int inputType) {
+        this(operatorId, inputType, null);
+    }
+
     /**
      * Loads the operator with the given id from the database.
      *
