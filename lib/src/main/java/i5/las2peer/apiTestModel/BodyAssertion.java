@@ -34,7 +34,7 @@ public class BodyAssertion extends RequestAssertion implements Serializable {
     }
 
     public BodyAssertion(BodyAssertionOperator operator) {
-        super(-1, -1, ASSERTION_TYPE_ID);
+        super(0, 0, ASSERTION_TYPE_ID);
         this.operator = operator;
     }
 

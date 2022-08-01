@@ -77,11 +77,11 @@ public class BodyAssertionOperator implements Serializable {
     }
 
     public BodyAssertionOperator(int operatorId, int inputType, String inputValue, BodyAssertionOperator followedByOperator) {
-        this(-1, operatorId, -1, inputType, inputValue, followedByOperator);
+        this(0, operatorId, -1, inputType, inputValue, followedByOperator);
     }
 
     public BodyAssertionOperator(int operatorId, int inputType, BodyAssertionOperator followedByOperator) {
-        this(-1, operatorId, -1, inputType, "", followedByOperator);
+        this(0, operatorId, -1, inputType, "", followedByOperator);
     }
 
     public BodyAssertionOperator(int operatorId, int inputType) {
