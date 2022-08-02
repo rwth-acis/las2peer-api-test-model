@@ -214,6 +214,10 @@ public class BodyAssertionOperator implements Serializable {
         return this.id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getOperatorId() {
         return this.operatorId;
     }
