@@ -22,7 +22,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'i5'
             artifactId = 'las2peer-api-test-model'
-            version = '0.1.9'
+            version = '1.0.0'
 
             from components.java
         }
